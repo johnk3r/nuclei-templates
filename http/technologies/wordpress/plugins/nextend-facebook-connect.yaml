@@ -7,7 +7,6 @@ info:
   reference:
     - https://wordpress.org/plugins/nextend-facebook-connect/
   metadata:
-    max-request: 1
     plugin_namespace: nextend-facebook-connect
     wpscan: https://wpscan.com/plugin/nextend-facebook-connect
   tags: tech,wordpress,wp-plugin,top-200
@@ -48,3 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4b0a004830460221008ecc6d99039280a72f7451910b25bc77e4e22563080ff904b9aee86881a8538302210092b7093b540ab635dc10afa742646e639faa2e81f54817c3b0d3091130d6dc5b:922c64590222798bb761d5b6d8e72950

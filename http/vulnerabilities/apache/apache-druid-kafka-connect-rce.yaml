@@ -17,15 +17,16 @@ info:
     cvss-score: 8.8
     cve-id: CVE-2023-25194
     cwe-id: CWE-502
-    epss-score: 0.69218
-    cpe: cpe:2.3:a:apache:kafka:*:*:*:*:*:*:*:*
+    epss-score: 0.91098
+    epss-percentile: 0.98567
+    cpe: cpe:2.3:a:apache:kafka_connect:*:*:*:*:*:*:*:*
   metadata:
-    max-request: 1
-    shodan-query: html:"Apache Druid"
     verified: true
+    max-request: 1
     vendor: apache
-    product: kafka
-  tags: cve,cve2023,apache,druid,kafka,rce,jndi,oast
+    product: kafka_connect
+    shodan-query: html:"Apache Druid"
+  tags: packetstorm,cve,cve2023,apache,druid,kafka,rce,jndi,oast
 
 http:
   - raw:
@@ -95,3 +96,5 @@ http:
       - type: status
         status:
           - 400
+
+# digest: 4a0a0047304502203e180800a8f8eba3fe27e2d36851c4b3cdafe40353d3643d217bc3ab919a3dbd022100d31b3bcdd353b5a4d3a91a13f7437d766f059b5ee45efe3c2155c0e9c4413467:922c64590222798bb761d5b6d8e72950

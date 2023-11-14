@@ -17,9 +17,9 @@ info:
     cve-id: CVE-2021-44228
     cwe-id: CWE-77
   metadata:
+    verified: true
     max-request: 1
     shodan-query: title:"OpenNMS Web Console"
-    verified: true
   tags: jndi,log4j,rce,opennms,cve,cve2021,kev,oast
 variables:
   rand1: '{{rand_int(111, 999)}}'
@@ -44,21 +44,20 @@ http:
       - type: regex
         part: interactsh_request
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
+
 
     extractors:
       - type: kval
         kval:
-          - interactsh_ip # Print remote interaction IP in output
+
 
       - type: regex
         group: 2
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print injection point in output
         part: interactsh_request
 
       - type: regex
         group: 1
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
         part: interactsh_request
+# digest: 4b0a00483046022100ad9e04f18f29293c12461bf90042fbdbb3368b564e5e8ad6cda96360a0c2eeff022100a755cb774e7dae7c5d497165f8adce0aea2fec0546e53f64f1f54c0b056112f7:922c64590222798bb761d5b6d8e72950

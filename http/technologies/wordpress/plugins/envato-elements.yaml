@@ -7,7 +7,6 @@ info:
   reference:
     - https://wordpress.org/plugins/envato-elements/
   metadata:
-    max-request: 1
     plugin_namespace: envato-elements
     wpscan: https://wpscan.com/plugin/envato-elements
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -48,3 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4a0a00473045022045a95ec114c01f8e9264ca4e03d17d6b775a1389373e580151fc5423836a67e10221008f55d277a2a6ecc7f975e4caef4bcaf3941013edd76b1236c097fe02d75d5202:922c64590222798bb761d5b6d8e72950

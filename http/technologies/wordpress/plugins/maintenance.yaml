@@ -7,7 +7,6 @@ info:
   reference:
     - https://wordpress.org/plugins/maintenance/
   metadata:
-    max-request: 1
     plugin_namespace: maintenance
     wpscan: https://wpscan.com/plugin/maintenance
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -48,3 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4b0a004830460221009d7f465a9e4394066645a564cbb68ea244180ea80a2aee83ca6bf49bf7f61a95022100a545bb43fcf10f4b58f7f293fc4cb6dc4ccb705457c58740c3dc657b38efc662:922c64590222798bb761d5b6d8e72950

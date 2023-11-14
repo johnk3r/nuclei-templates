@@ -7,7 +7,6 @@ info:
   reference:
     - https://wordpress.org/plugins/wps-hide-login/
   metadata:
-    max-request: 1
     plugin_namespace: wps-hide-login
     wpscan: https://wpscan.com/plugin/wps-hide-login
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -48,3 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 490a004630440220129cd7a36797b541059e29e22308f6b07f2065b56d6570c06431d0d9bb3094870220119ca172a17e257bed460afe3b51887a873904082da1bf65027dfbaa93f2b628:922c64590222798bb761d5b6d8e72950

@@ -7,7 +7,6 @@ info:
   reference:
     - https://wordpress.org/plugins/facebook-for-woocommerce/
   metadata:
-    max-request: 1
     plugin_namespace: facebook-for-woocommerce
     wpscan: https://wpscan.com/plugin/facebook-for-woocommerce
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -48,3 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4a0a0047304502204c17c613df65b850dd803e8e77038447e327dd4c66db755fea6ce75d0b613d290221009e2d4a156813bcb9390aadaeddb732d8c12c27a992455b58a77edd666588e789:922c64590222798bb761d5b6d8e72950

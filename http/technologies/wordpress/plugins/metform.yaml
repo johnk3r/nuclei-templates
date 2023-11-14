@@ -1,0 +1,50 @@
+id: wordpress-metform
+
+info:
+  name: Metform Elementor Contact Form Builder Detection
+  author: ricardomaia
+  severity: info
+  reference:
+    - https://wordpress.org/plugins/metform/
+  metadata:
+    plugin_namespace: metform
+    wpscan: https://wpscan.com/plugin/metform
+  tags: tech,wordpress,wp-plugin,top-200
+
+http:
+  - method: GET
+
+    path:
+      - "{{BaseURL}}/wp-content/plugins/metform/readme.txt"
+
+    payloads:
+      last_version: helpers/wordpress/plugins/metform.txt
+
+    extractors:
+      - type: regex
+        part: body
+        internal: true
+        name: internal_detected_version
+        group: 1
+        regex:
+          - '(?i)Stable.tag:\s?([\w.]+)'
+
+      - type: regex
+        part: body
+        name: detected_version
+        group: 1
+        regex:
+          - '(?i)Stable.tag:\s?([\w.]+)'
+
+    matchers-condition: or
+    matchers:
+      - type: dsl
+        name: "outdated_version"
+        dsl:
+          - compare_versions(internal_detected_version, concat("< ", last_version))
+
+      - type: regex
+        part: body
+        regex:
+          - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4a0a0047304502206b32962bdbc766190cf6054a9236fea7e654ae8265f5b3aa7fab978ef2bcad00022100b095a7f80b8697a24055cc3bea2e46010c9e07fd110357dcb1a170b78013e8f9:922c64590222798bb761d5b6d8e72950

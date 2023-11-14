@@ -15,9 +15,9 @@ info:
     cve-id: CVE-2021-44228
     cwe-id: CWE-77
   metadata:
+    verified: true
     max-request: 1
     shodan-query: title:"vManage"
-    verified: true
   tags: log4j,cisco,tenable,cve,cve2021,rce,jndi,kev,oast
 variables:
   rand1: '{{rand_int(111, 999)}}'
@@ -50,21 +50,20 @@ http:
       - type: regex
         part: interactsh_request
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
+
 
     extractors:
       - type: kval
         kval:
-          - interactsh_ip # Print remote interaction IP in output
+
 
       - type: regex
         group: 2
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print injection point in output
         part: interactsh_request
 
       - type: regex
         group: 1
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
         part: interactsh_request
+# digest: 4a0a00473045022100de2072fc8e1ba56a42f92db188c6d186d310b8f871bd9fc9f08d9ecc6823915802205443a8c561bb1ad6c96387f52d1b13daa122e2d3fa0c7883a2fefaf8a69620aa:922c64590222798bb761d5b6d8e72950

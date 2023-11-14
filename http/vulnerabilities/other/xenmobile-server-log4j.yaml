@@ -13,8 +13,8 @@ info:
     cve-id: CVE-2021-44228
     cwe-id: CWE-502
   metadata:
-    max-request: 1
     verified: true
+    max-request: 1
     shodan-query: title:"XenMobile"
   tags: cve,cve2021,rce,jndi,log4j,xenmobile,oast
 variables:
@@ -50,21 +50,20 @@ http:
       - type: regex
         part: interactsh_request
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
+
 
     extractors:
       - type: kval
         kval:
-          - interactsh_ip # Print remote interaction IP in output
+
 
       - type: regex
         group: 2
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print injection point in output
         part: interactsh_request
 
       - type: regex
         group: 1
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
         part: interactsh_request
+# digest: 4a0a004730450221008a9b07a828bc56088ded57baae1caae463d98c877693ef95048f0b483e9f4cad0220597d8f8b37a7d25ab041d4505c036cfeeb7b9921da2076dcf0aa51a47d58ac8a:922c64590222798bb761d5b6d8e72950

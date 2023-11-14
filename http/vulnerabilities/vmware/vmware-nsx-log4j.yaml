@@ -15,9 +15,9 @@ info:
     cve-id: CVE-2021-44228
     cwe-id: CWE-77
   metadata:
+    verified: true
     max-request: 1
     shodan-query: html:"vmw_nsx_logo-black-triangle-500w.png"
-    verified: true
   tags: cve,cve2021,rce,jndi,log4j,graylog,kev,oast
 variables:
   rand1: '{{rand_int(111, 999)}}'
@@ -50,21 +50,20 @@ http:
       - type: regex
         part: interactsh_request
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
+
 
     extractors:
       - type: kval
         kval:
-          - interactsh_ip # Print remote interaction IP in output
+
 
       - type: regex
         group: 2
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print injection point in output
         part: interactsh_request
 
       - type: regex
         group: 1
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
         part: interactsh_request
+# digest: 4b0a004830460221008d7d00dc839c7689c21aeb46ee294a97ca65414a521ad162bfcc6c0dd2901d4c022100f96346b109721448fc5ee67a3469c0a2a913bcd494fdd6a7d097750e5ba64278:922c64590222798bb761d5b6d8e72950

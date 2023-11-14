@@ -7,7 +7,6 @@ info:
   reference:
     - https://wordpress.org/plugins/click-to-chat-for-whatsapp/
   metadata:
-    max-request: 1
     plugin_namespace: click-to-chat-for-whatsapp
     wpscan: https://wpscan.com/plugin/click-to-chat-for-whatsapp
   tags: tech,wordpress,wp-plugin,top-200
@@ -48,3 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4b0a004830460221009da14993ec6b1b7f49f0008622c0223c86d2c80085ea89170889488ae3caad63022100c279a988e7a3ec0a5cd85ff569e7e092ae622a0953d4b2065343a088fa2d4859:922c64590222798bb761d5b6d8e72950

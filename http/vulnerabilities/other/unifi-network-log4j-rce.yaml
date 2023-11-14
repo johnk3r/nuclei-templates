@@ -17,9 +17,9 @@ info:
     cve-id: CVE-2021-44228
     cwe-id: CWE-77
   metadata:
+    verified: true
     max-request: 1
     shodan-query: http.title:"UniFi Network"
-    verified: true
   tags: cve,cve2021,rce,log4j,ubnt,unifi,oast,jndi,kev
 variables:
   rand1: '{{rand_int(111, 999)}}'
@@ -46,21 +46,20 @@ http:
       - type: regex
         part: interactsh_request
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
+
 
     extractors:
       - type: kval
         kval:
-          - interactsh_ip # Print remote interaction IP in output
+
 
       - type: regex
         group: 2
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print injection point in output
         part: interactsh_request
 
       - type: regex
         group: 1
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
         part: interactsh_request
+# digest: 4b0a00483046022100dda4748c06e68e7584bbf19667f467b1eb39fe975af429bd4ec5b64273394ce1022100ffa1472e3d87796883146b1439715a37bf1a0d8fe728cdf1d84bbe0c116fea52:922c64590222798bb761d5b6d8e72950

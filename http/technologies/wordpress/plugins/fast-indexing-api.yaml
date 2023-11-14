@@ -7,7 +7,6 @@ info:
   reference:
     - https://wordpress.org/plugins/fast-indexing-api/
   metadata:
-    max-request: 1
     plugin_namespace: fast-indexing-api
     wpscan: https://wpscan.com/plugin/fast-indexing-api
   tags: tech,wordpress,wp-plugin,top-200
@@ -48,3 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4a0a0047304502202f91ff94267cc4d8e2f20c6410a7df31cb6af13ae2c726359cb868681c0fe097022100d3981f0a3643efcfb6057482fb0b81b709cdbd9a9e42b65a6dd208475f95d7c0:922c64590222798bb761d5b6d8e72950

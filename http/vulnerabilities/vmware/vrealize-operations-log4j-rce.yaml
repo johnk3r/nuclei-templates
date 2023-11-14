@@ -18,9 +18,9 @@ info:
     cve-id: CVE-2021-44228
     cwe-id: CWE-77
   metadata:
+    verified: true
     max-request: 1
     shodan-query: http.title:"vRealize Operations Tenant App"
-    verified: true
   tags: cve,cve2021,oast,rce,log4j,vmware,vrealize,kev
 variables:
   rand1: '{{rand_int(111, 999)}}'
@@ -47,21 +47,20 @@ http:
       - type: regex
         part: interactsh_request
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
+
 
     extractors:
       - type: kval
         kval:
-          - interactsh_ip # Print remote interaction IP in output
+
 
       - type: regex
         group: 2
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print injection point in output
         part: interactsh_request
 
       - type: regex
         group: 1
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
         part: interactsh_request
+# digest: 4a0a00473045022100955fc9cfb6a98cd3b34e6c9ebf1ba97a8e63456f8a030c1663f582913dfe0add02204043b64f7f09bcf8dee2b78f90dad14e8e0ae3aaeecd6cee9e7f8d79944e1b60:922c64590222798bb761d5b6d8e72950

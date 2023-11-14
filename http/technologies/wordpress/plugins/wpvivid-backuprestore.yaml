@@ -7,7 +7,6 @@ info:
   reference:
     - https://wordpress.org/plugins/wpvivid-backuprestore/
   metadata:
-    max-request: 1
     plugin_namespace: wpvivid-backuprestore
     wpscan: https://wpscan.com/plugin/wpvivid-backuprestore
   tags: tech,wordpress,wp-plugin,top-200
@@ -48,3 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4a0a00473045022100d1f18fd833459f85351e191c527de934049239f3e8706f25653a3dc9052592010220098150f5abfb1a56d975f0d8dbcd7acf0282f79cc748b84dec19f39daa4b6691:922c64590222798bb761d5b6d8e72950
