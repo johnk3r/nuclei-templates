@@ -953,8 +953,8 @@ code/windows/audit/winrm-remote-shell-access-allowed.yaml:c065d90361731773cde343
 code/windows/enumeration/rdp-ntlm-info.yaml:a4e4ee99b93ce4d060d0e525bf8a4d6c6f15c9f2
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:362462fcd69214ad2fc765d007d8ac58dfe38344
-cves.json:aa5cbe2f48ebca582cdfe929bbfe8ead304f2c77
-cves.json-checksum.txt:08db055a04745cea35c1b47484598b9b89986403
+cves.json:0383b07c70815f5b2127c5237c39e18d43e2a941
+cves.json-checksum.txt:af14b9456083867983c7f8b61764330d76943616
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -5502,6 +5502,7 @@ http/cves/2024/CVE-2024-9465.yaml:727a0bc54e114c3bda6c2e028ebf3dd1f2e0d64b
 http/cves/2024/CVE-2024-9474.yaml:a5b09ffaad292cc5e0c90c0cb05acce56f156210
 http/cves/2024/CVE-2024-9593.yaml:135b89a38d4ff020ec4e673ac912aae462f2b848
 http/cves/2024/CVE-2024-9617.yaml:a4d4001fa4806802b8a3cb1f8d9a58a705994c1a
+http/cves/2024/CVE-2024-9643.yaml:4a463695ffc70a7f856427197df663325a3c968f
 http/cves/2024/CVE-2024-9707.yaml:13ee539662e8141ba23c435fe58ea3512987bbbe
 http/cves/2024/CVE-2024-9772.yaml:33cef7d38cc4b58497ab6c0445c0547e4f0ebf65
 http/cves/2024/CVE-2024-9796.yaml:0e66b9968c22fac1b18976d33f970d3cab2eff0f
@@ -12798,7 +12799,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:a33a5ee52396e47b398b8d7bdfb0a5b638b12761
+templates-checksum.txt:5a6f706e77a145176e8021ffd0e2bbb0614963af
 wappalyzer-mapping.yml:7f03bd65baacac20c1dc6bbf35ff2407959574f1
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
