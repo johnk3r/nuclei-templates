@@ -953,8 +953,8 @@ code/windows/audit/winrm-remote-shell-access-allowed.yaml:c065d90361731773cde343
 code/windows/enumeration/rdp-ntlm-info.yaml:a4e4ee99b93ce4d060d0e525bf8a4d6c6f15c9f2
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:362462fcd69214ad2fc765d007d8ac58dfe38344
-cves.json:45868a90985304f72378392d592045a8cd685013
-cves.json-checksum.txt:718659a76849a2a34ad7b7f5c7d540c290388f4d
+cves.json:a885a48f3147b1949cbb28e22c1312893394335b
+cves.json-checksum.txt:816ba96543d00d4868b5ab89597004e99df32f71
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -1469,9 +1469,9 @@ file/keys/wireguard/wireguard-preshared.yaml:d46e739b569d876b3d2b38b70865fd42cf7
 file/keys/wireguard/wireguard-private.yaml:b6205c5c9390056f264ec92790d4651d19c0ad69
 file/keys/zapier-webhook.yaml:2e9c468a9b0eed2a6440a1cf827e888a9ac6edac
 file/keys/zendesk-secret-key.yaml:b1ad38c1f02f9417dadfe2f8b07da3d3af4b06c7
-file/logs/aspnet-framework-exceptions.yaml:534318811a02431eac1363ac77b4d56bcd0d9420
+file/logs/aspnet-framework-exceptions.yaml:bbe24ac79bfbe076e47cf448390baa678fbcf217
 file/logs/django-framework-exceptions.yaml:11f2844d91bd7d71ccc93dc5cc3e6a7d7d556a29
-file/logs/nodejs-framework-exceptions.yaml:1d316271d5ee4a5910e03614031c3b87e581e980
+file/logs/nodejs-framework-exceptions.yaml:3da302a60062b59d7b585c01c42dfd110c671d19
 file/logs/python-app-sql-exceptions.yaml:fae875f162ba7159717d28aae03277774181b308
 file/logs/ruby-on-rails-framework-exceptions.yaml:52687d5d2e31f43e2d65d80259d63f1e140a876e
 file/logs/spring-framework-exceptions.yaml:f52c14b9e2cad82d791513e7cee32af8261d05db
@@ -4745,7 +4745,7 @@ http/cves/2023/CVE-2023-40208.yaml:bec9b0a207560e4c1e06251c7b73f074237f908c
 http/cves/2023/CVE-2023-40211.yaml:76861ce7a951d4aa16fc3f4d00bfe022212274f1
 http/cves/2023/CVE-2023-40355.yaml:f8534ca2b86ae385b6532700b55bd13784971a49
 http/cves/2023/CVE-2023-40504.yaml:f4427c143d5d53edae7d62c23bea37ae03934f6c
-http/cves/2023/CVE-2023-40600.yaml:3e1e8d959d5a37a03cceb214a5adf491b549900a
+http/cves/2023/CVE-2023-40600.yaml:9714ce0a867b7175b7691f7f52f9d1f1fd70f729
 http/cves/2023/CVE-2023-40748.yaml:ae35ca51e71b1565b722eb44ed8e042002acf9f5
 http/cves/2023/CVE-2023-40749.yaml:6fbe1a10ebc4c33a166fcab580e9f5658df5a1d8
 http/cves/2023/CVE-2023-40750.yaml:f780ddd334dee40678a47476b5416541e623df3c
@@ -4972,7 +4972,7 @@ http/cves/2024/CVE-2024-11044.yaml:d546368cdb27632015243db24987683be6f31736
 http/cves/2024/CVE-2024-11238.yaml:c216ae18d9d1780ba795bd5244315978ee877c3e
 http/cves/2024/CVE-2024-11303.yaml:037b96980ed19c5b38a673eec37a06a677b0ead4
 http/cves/2024/CVE-2024-11305.yaml:b1c642565f3fd389f629fb45a8c999f4c07996ab
-http/cves/2024/CVE-2024-11320.yaml:da75e2bb84bae30f69c49cb4d5dc879160cebce9
+http/cves/2024/CVE-2024-11320.yaml:68388352e1c2c4cb3d46d52703a450e0d265a093
 http/cves/2024/CVE-2024-11396.yaml:50215d98d098534ea296a4f7224404801a8401ab
 http/cves/2024/CVE-2024-11587.yaml:cc874e6039f2ca2a75cab0ecb1cf6005c57348b4
 http/cves/2024/CVE-2024-11680.yaml:cc45095c1df7787d08833e5afea8a2b759da828a
@@ -12345,7 +12345,7 @@ http/vulnerabilities/yonyou/yonyou-nc-baseapp-deserialization.yaml:88518c9ca3a36
 http/vulnerabilities/yonyou/yonyou-nc-dispatcher-fileupload.yaml:35bd482d745f5f773ef6dce16faf7c73eb51c2e3
 http/vulnerabilities/yonyou/yonyou-nc-grouptemplet-fileupload.yaml:dfff98d2e6a550f2a57882f376a0bc1d65416d73
 http/vulnerabilities/yonyou/yonyou-nc-info-leak.yaml:03d9adb72a783690b55b3a77f42eeb6751c362a2
-http/vulnerabilities/yonyou/yonyou-nc-lfi.yaml:2c8595ad02b87b3968d33be3ccb975df8cacf823
+http/vulnerabilities/yonyou/yonyou-nc-lfi.yaml:5f1871e29d142c6ab6c8bd7c5077ccc8f01a8d8c
 http/vulnerabilities/yonyou/yonyou-nc-ncmessageservlet-rce.yaml:4c2080417a73e529187c4fceb76f7eb2d226105d
 http/vulnerabilities/yonyou/yonyou-u8-crm-fileupload.yaml:868a6d841bb8f852c9ef93d298a1b1d1efac6447
 http/vulnerabilities/yonyou/yonyou-u8-crm-lfi.yaml:ef445da872245ebc6568826f1daffab42eca25df
@@ -12675,7 +12675,7 @@ network/detection/starttls-mail-detect.yaml:8d31ada78ef30202fae8751cdaa9422392f2
 network/detection/teamspeak3-detect.yaml:e6c560d48afcc0fbd7696e68cce13a0f3a465c8c
 network/detection/telnet-detect.yaml:0bacd4d2ee361018775bfc68e4a0ff6b41314464
 network/detection/totemomail-smtp-detect.yaml:1d903fddfffb12ffdeec7c4f4f91076f0e2b0295
-network/detection/unauth-java-message-broker-detect.yaml:f48c87c428dcafb39778aa6f5f0d986467655691
+network/detection/unauth-java-message-broker-detect.yaml:1c354add99c620f43e69e1c7c551c71bbeb754aa
 network/detection/vmware-authentication-daemon-detect.yaml:750589bde6c858ae33daf9ba5616c9f96b72476f
 network/detection/vnc-service-detect.yaml:4e32e5537b5abf51cac12d42260d3382fed8e025
 network/detection/vtun-server.yaml:bf93f133d4a1037d2adffc99b449bcf3b48f7f06
@@ -12803,7 +12803,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:d87ff3a5a5f5ed91e64143174f1911e7b6b3b48f
+templates-checksum.txt:4cefc71297c00d57805ed83c499120279c82e328
 wappalyzer-mapping.yml:7f03bd65baacac20c1dc6bbf35ff2407959574f1
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
